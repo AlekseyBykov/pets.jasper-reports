@@ -26,4 +26,10 @@ public class JasperReportsTest extends JasperReportsTestBase {
 		createHtml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.html");
 		assertFalse(CustomPathHelper.isDirectoryEmpty(new File(htmlReportsPath)));
 	}
+
+	@Test
+	public void testCreateDocx() throws JRException, FileNotFoundException {
+		createDocx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.docx");
+		assertFalse(CustomPathHelper.isDirectoryEmpty(new File(docxReportsPath)));
+	}
 }
