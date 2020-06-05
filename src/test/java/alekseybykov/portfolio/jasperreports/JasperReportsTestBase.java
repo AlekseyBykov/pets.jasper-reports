@@ -53,10 +53,10 @@ public class JasperReportsTestBase {
 
 	protected void createDocx(String designFileName, String dataSourceFileName, String docxFileName) throws JRException, FileNotFoundException {
 		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
-		JRDocxExporter export = new JRDocxExporter();
-		export.setExporterInput(new SimpleExporterInput(jasperPrint));
-		export.setExporterOutput(new SimpleOutputStreamExporterOutput(new File(docxReportsPath.concat(docxFileName))));
-		export.exportReport();
+		JRDocxExporter jrDocxExporter = new JRDocxExporter();
+		jrDocxExporter.setExporterInput(new SimpleExporterInput(jasperPrint));
+		jrDocxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(new File(docxReportsPath.concat(docxFileName))));
+		jrDocxExporter.exportReport();
 	}
 
 	private JasperPrint compileAndFillReport(String designFileName, String dataSourceFileName) throws JRException, FileNotFoundException {

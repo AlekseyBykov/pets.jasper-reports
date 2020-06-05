@@ -1,5 +1,7 @@
 package alekseybykov.portfolio.jasperreports.helpers;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -24,8 +26,12 @@ public class CustomPathHelper {
 		return Objects.requireNonNull(getClassLoader().getResource(fileName));
 	}
 
+	public static boolean isFileExists(File file) {
+		return !file.isDirectory() && file.exists();
+	}
+
 	public static boolean isDirectoryEmpty(File directory) {
-		return directory.list().length == 0;
+		return directory.list().length == NumberUtils.INTEGER_ZERO;
 	}
 
 	private static ClassLoader getClassLoader() {
