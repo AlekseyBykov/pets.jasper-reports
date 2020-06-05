@@ -17,7 +17,7 @@ public class JasperReportsTest extends JasperReportsTestBase {
 
 	@Test
 	public void testCreatePdf() throws JRException, FileNotFoundException {
-		createPdf("report.jrxml", "data.csv", "report.pdf");
+		createPdf("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.pdf");
 		assertFalse(CustomPathHelper.isDirectoryEmpty(new File(pdfReportsPath)));
 	}
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <csvDataAdapter class="net.sf.jasperreports.data.csv.CsvDataAdapterImpl">
-	<name>Customers</name>
+	<name>Exchange rates</name>
 	<dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
-		<location>C:\java-projects\jasper-reports\src\test\resources\data\csv\data.csv</location>
+		<location>C:\java-projects\jasper-reports\src\test\resources\data\csv\exchange-rates-2020-may.csv</location>
 	</dataFile>
 	<encoding>UTF-8</encoding>
 	<recordDelimiter>&#13;&#10;</recordDelimiter>
@@ -11,8 +11,8 @@
 	<locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">en</locale>
 	<timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">Europe/London</timeZone>
 	<queryExecuterMode>false</queryExecuterMode>
-	<columnNames>COLUMN_1</columnNames>
-	<columnNames>COLUMN_2</columnNames>
-	<columnNames>COLUMN_3</columnNames>
-	<columnNames>COLUMN_4</columnNames>
+	<columnNames>DATE</columnNames>
+	<columnNames>USD</columnNames>
+	<columnNames>EUR</columnNames>
+	<columnNames>GBP</columnNames>
 </csvDataAdapter>
