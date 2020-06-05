@@ -4,6 +4,8 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Objects;
@@ -32,6 +34,16 @@ public class CustomPathHelper {
 
 	public static boolean isDirectoryEmpty(File directory) {
 		return directory.list().length == NumberUtils.INTEGER_ZERO;
+	}
+
+	public static void deleteFiles(File file) {
+		if (file.isDirectory()) {
+			for (File f : file.listFiles()) {
+				deleteFiles(f);
+			}
+		} else {
+			file.delete();
+		}
 	}
 
 	private static ClassLoader getClassLoader() {

@@ -13,13 +13,11 @@ import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
 import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
-import org.apache.commons.io.FileUtils;
 import org.junit.BeforeClass;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -28,17 +26,19 @@ import java.io.InputStream;
  */
 public class JasperReportsTestBase {
 
+	protected static final String rootReportsPath = System.getProperty("user.dir").concat("/out/");;
+
 	protected static final String designFilesPath = "jrxml/";
 	protected static final String csvDataSourcePath = "data/csv/";
+
 	protected static final String pdfReportsPath = System.getProperty("user.dir").concat("/out/reports/pdf/");
 	protected static final String htmlReportsPath = System.getProperty("user.dir").concat("/out/reports/html/");
 	protected static final String docxReportsPath = System.getProperty("user.dir").concat("/out/reports/docx/");
+	protected static final String xmlReportsPath = System.getProperty("user.dir").concat("/out/reports/xml/");
 
 	@BeforeClass
-	public static void init() throws IOException {
-		FileUtils.cleanDirectory(new File(pdfReportsPath));
-		FileUtils.cleanDirectory(new File(htmlReportsPath));
-		FileUtils.cleanDirectory(new File(docxReportsPath));
+	public static void init() {
+		CustomPathHelper.deleteFiles(new File(rootReportsPath));
 	}
 
 	protected void createPdf(String designFileName, String dataSourceFileName, String pdfFileName) throws JRException, FileNotFoundException {
@@ -57,6 +57,11 @@ public class JasperReportsTestBase {
 		jrDocxExporter.setExporterInput(new SimpleExporterInput(jasperPrint));
 		jrDocxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(new File(docxReportsPath.concat(docxFileName))));
 		jrDocxExporter.exportReport();
+	}
+
+	protected void createXml(String designFileName, String dataSourceFileName, String xmlFileName) throws JRException, FileNotFoundException {
+		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
+		JasperExportManager.exportReportToXmlFile(jasperPrint, xmlReportsPath.concat(xmlFileName), false);
 	}
 
 	private JasperPrint compileAndFillReport(String designFileName, String dataSourceFileName) throws JRException, FileNotFoundException {

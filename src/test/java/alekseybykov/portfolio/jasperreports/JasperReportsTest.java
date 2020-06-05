@@ -7,7 +7,6 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -18,19 +17,29 @@ public class JasperReportsTest extends JasperReportsTestBase {
 
 	@Test
 	public void testCreatePdf() throws JRException, FileNotFoundException {
-		createPdf("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.pdf");
-		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat("exchange-rates-2020-may.pdf"))));
+		String reportName = "exchange-rates-2020-may.pdf";
+		createPdf("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat(reportName))));
 	}
 
 	@Test
 	public void testCreateHtml() throws JRException, FileNotFoundException {
-		createHtml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.html");
-		assertTrue(CustomPathHelper.isFileExists(new File(htmlReportsPath.concat("exchange-rates-2020-may.html"))));
+		String reportName = "exchange-rates-2020-may.html";
+		createHtml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(htmlReportsPath.concat(reportName))));
 	}
 
 	@Test
 	public void testCreateDocx() throws JRException, FileNotFoundException {
-		createDocx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", "exchange-rates-2020-may.docx");
-		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat("exchange-rates-2020-may.docx"))));
+		String reportName = "exchange-rates-2020-may.docx";
+		createDocx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat(reportName))));
+	}
+
+	@Test
+	public void testCreateXml() throws JRException, FileNotFoundException {
+		String reportName = "exchange-rates-2020-may.xml";
+		createXml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(xmlReportsPath.concat(reportName))));
 	}
 }
