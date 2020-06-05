@@ -1,6 +1,8 @@
 package alekseybykov.portfolio.jasperreports.helpers;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.Objects;
 
@@ -10,11 +12,23 @@ import java.util.Objects;
  */
 public class CustomPathHelper {
 
-	public static File getResource(String fileName) {
-		return new File(Objects.requireNonNull(CustomPathHelper.class.getClassLoader().getResource(fileName)).getFile());
+	public static File getResourceAsFile(String fileName) {
+		return new File(Objects.requireNonNull(getClassLoader().getResource(fileName)).getFile());
+	}
+
+	public static InputStream getResourceAsStream(String fileName) {
+		return Objects.requireNonNull(getClassLoader().getResourceAsStream(fileName));
 	}
 
 	public static URL getResourceURL(String fileName) {
-		return CustomPathHelper.class.getClassLoader().getResource(fileName);
+		return Objects.requireNonNull(getClassLoader().getResource(fileName));
+	}
+
+	public static boolean isDirectoryEmpty(File directory) {
+		return directory.list().length == 0;
+	}
+
+	private static ClassLoader getClassLoader() {
+		return Objects.requireNonNull(CustomPathHelper.class.getClassLoader());
 	}
 }
