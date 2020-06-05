@@ -28,17 +28,28 @@ public class JasperReportsTestBase {
 	protected static final String designFilesPath = "jrxml/";
 	protected static final String csvDataSourcePath = "data/csv/";
 	protected static final String pdfReportsPath = System.getProperty("user.dir").concat("/out/reports/pdf/");
+	protected static final String htmlReportsPath = System.getProperty("user.dir").concat("/out/reports/html/");
 
 	@BeforeClass
 	public static void init() throws IOException {
 		FileUtils.cleanDirectory(new File(pdfReportsPath));
+		FileUtils.cleanDirectory(new File(htmlReportsPath));
 	}
 
 	protected void createPdf(String designFileName, String dataSourceFileName, String pdfFileName) throws JRException, FileNotFoundException {
+		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
+		JasperExportManager.exportReportToPdfFile(jasperPrint, pdfReportsPath.concat(pdfFileName));
+	}
+
+	protected void createHtml(String designFileName, String dataSourceFileName, String htmlFileName) throws JRException, FileNotFoundException {
+		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
+		JasperExportManager.exportReportToHtmlFile(jasperPrint, htmlReportsPath.concat(htmlFileName));
+	}
+
+	private JasperPrint compileAndFillReport(String designFileName, String dataSourceFileName) throws JRException, FileNotFoundException {
 		InputStream inputStream = new FileInputStream(CustomPathHelper.getResourceAsFile(designFilesPath.concat(designFileName)));
 		JasperReport jasperReport = JasperCompileManager.compileReport(JRXmlLoader.load(inputStream));
 		JRDataSource dataSource = new JRCsvDataSource(CustomPathHelper.getResourceAsStream(csvDataSourcePath.concat(dataSourceFileName)));
-		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, dataSource);
-		JasperExportManager.exportReportToPdfFile(jasperPrint, pdfReportsPath.concat(pdfFileName));
+		return JasperFillManager.fillReport(jasperReport, null, dataSource);
 	}
 }
