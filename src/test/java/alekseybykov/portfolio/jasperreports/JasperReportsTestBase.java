@@ -10,9 +10,11 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRCsvDataSource;
 import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
+import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
 import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
+import net.sf.jasperreports.export.SimpleXlsxReportConfiguration;
 import org.junit.BeforeClass;
 
 import java.io.File;
@@ -35,6 +37,7 @@ public class JasperReportsTestBase {
 	protected static final String htmlReportsPath = System.getProperty("user.dir").concat("/out/reports/html/");
 	protected static final String docxReportsPath = System.getProperty("user.dir").concat("/out/reports/docx/");
 	protected static final String xmlReportsPath = System.getProperty("user.dir").concat("/out/reports/xml/");
+	protected static final String xlsxReportsPath = System.getProperty("user.dir").concat("/out/reports/xlsx/");
 
 	@BeforeClass
 	public static void init() {
@@ -62,6 +65,17 @@ public class JasperReportsTestBase {
 	protected void createXml(String designFileName, String dataSourceFileName, String xmlFileName) throws JRException, FileNotFoundException {
 		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
 		JasperExportManager.exportReportToXmlFile(jasperPrint, xmlReportsPath.concat(xmlFileName), false);
+	}
+
+	protected void createXlsx(String designFileName, String dataSourceFileName, String xlsxFileName) throws JRException, FileNotFoundException {
+		JasperPrint jasperPrint = compileAndFillReport(designFileName, dataSourceFileName);
+		JRXlsxExporter jrXlsxExporter = new JRXlsxExporter();
+		jrXlsxExporter.setExporterInput(new SimpleExporterInput(jasperPrint));
+		jrXlsxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(xlsxReportsPath.concat(xlsxFileName)));
+		SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
+		configuration.setCollapseRowSpan(false);
+		jrXlsxExporter.setConfiguration(configuration);
+		jrXlsxExporter.exportReport();
 	}
 
 	private JasperPrint compileAndFillReport(String designFileName, String dataSourceFileName) throws JRException, FileNotFoundException {

@@ -42,4 +42,11 @@ public class JasperReportsTest extends JasperReportsTestBase {
 		createXml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xmlReportsPath.concat(reportName))));
 	}
+
+	@Test
+	public void testCreateXlsx() throws JRException, FileNotFoundException {
+		String reportName = "exchange-rates-2020-may.xlsx";
+		createXlsx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
+	}
 }
