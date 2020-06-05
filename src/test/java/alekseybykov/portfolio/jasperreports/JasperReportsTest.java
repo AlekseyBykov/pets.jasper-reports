@@ -5,7 +5,6 @@ import net.sf.jasperreports.engine.JRException;
 import org.junit.Test;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 import static org.junit.Assert.assertTrue;
 
@@ -16,37 +15,37 @@ import static org.junit.Assert.assertTrue;
 public class JasperReportsTest extends JasperReportsTestBase {
 
 	@Test
-	public void testCreatePdf() throws JRException, FileNotFoundException {
+	public void testCreatePdf() throws JRException {
 		String reportName = "exchange-rates-2020-may.pdf";
-		createPdf("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		createPdf(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateHtml() throws JRException, FileNotFoundException {
+	public void testCreateHtml() throws JRException {
 		String reportName = "exchange-rates-2020-may.html";
-		createHtml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		createHtml(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(htmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateDocx() throws JRException, FileNotFoundException {
+	public void testCreateDocx() throws JRException {
 		String reportName = "exchange-rates-2020-may.docx";
-		createDocx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		createDocx(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXml() throws JRException, FileNotFoundException {
+	public void testCreateXml() throws JRException {
 		String reportName = "exchange-rates-2020-may.xml";
-		createXml("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		createXml(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXlsx() throws JRException, FileNotFoundException {
+	public void testCreateXlsx() throws JRException {
 		String reportName = "exchange-rates-2020-may.xlsx";
-		createXlsx("exchange-rates-2020-may.jrxml", "exchange-rates-2020-may.csv", reportName);
+		createXlsx(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
 	}
 }
