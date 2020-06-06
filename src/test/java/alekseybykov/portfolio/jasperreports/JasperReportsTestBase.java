@@ -28,10 +28,10 @@ import java.io.InputStream;
  */
 public class JasperReportsTestBase {
 
-	protected static final String rootReportsPath = System.getProperty("user.dir").concat("/out/");;
+	private static final String rootReportsPath = System.getProperty("user.dir").concat("/out/");;
 
-	protected static final String designFilesPath = "jrxml/";
-	protected static final String csvDataSourcePath = "data/csv/";
+	private static final String designFilesPath = "jrxml/";
+	private static final String csvDataSourcePath = "data/csv/";
 
 	protected static final String pdfReportsPath = System.getProperty("user.dir").concat("/out/reports/pdf/");
 	protected static final String htmlReportsPath = System.getProperty("user.dir").concat("/out/reports/html/");
@@ -39,8 +39,8 @@ public class JasperReportsTestBase {
 	protected static final String xmlReportsPath = System.getProperty("user.dir").concat("/out/reports/xml/");
 	protected static final String xlsxReportsPath = System.getProperty("user.dir").concat("/out/reports/xlsx/");
 
-	protected static final String designFileName = "exchange-rates-2020-may.jrxml";
-	protected static final String dataSourceFileName = "exchange-rates-2020-may.csv";
+	private static final String designFileName = "exchange-rates-2020-may.jrxml";
+	private static final String dataSourceFileName = "exchange-rates-2020-may.csv";
 
 	private static JasperPrint jasperPrint;
 
@@ -50,26 +50,26 @@ public class JasperReportsTestBase {
 		jasperPrint = compileAndFillReport();
 	}
 
-	protected void createPdf(String pdfFileName) throws JRException {
+	protected void createPdfFromCsv(String pdfFileName) throws JRException {
 		JasperExportManager.exportReportToPdfFile(jasperPrint, pdfReportsPath.concat(pdfFileName));
 	}
 
-	protected void createHtml(String htmlFileName) throws JRException {
+	protected void createHtmlFromCsv(String htmlFileName) throws JRException {
 		JasperExportManager.exportReportToHtmlFile(jasperPrint, htmlReportsPath.concat(htmlFileName));
 	}
 
-	protected void createDocx(String docxFileName) throws JRException {
+	protected void createDocxFromCsv(String docxFileName) throws JRException {
 		JRDocxExporter jrDocxExporter = new JRDocxExporter();
 		jrDocxExporter.setExporterInput(new SimpleExporterInput(jasperPrint));
 		jrDocxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(new File(docxReportsPath.concat(docxFileName))));
 		jrDocxExporter.exportReport();
 	}
 
-	protected void createXml(String xmlFileName) throws JRException {
+	protected void createXmlFromCsv(String xmlFileName) throws JRException {
 		JasperExportManager.exportReportToXmlFile(jasperPrint, xmlReportsPath.concat(xmlFileName), false);
 	}
 
-	protected void createXlsx(String xlsxFileName) throws JRException {
+	protected void createXlsxFromCsv(String xlsxFileName) throws JRException {
 		JRXlsxExporter jrXlsxExporter = new JRXlsxExporter();
 		jrXlsxExporter.setExporterInput(new SimpleExporterInput(jasperPrint));
 		jrXlsxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(xlsxReportsPath.concat(xlsxFileName)));

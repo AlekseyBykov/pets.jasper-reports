@@ -2,7 +2,7 @@
 <csvDataAdapter class="net.sf.jasperreports.data.csv.CsvDataAdapterImpl">
 	<name>Exchange rates</name>
 	<dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
-		<location>C:\java-projects\jasper-reports\src\test\resources\data\csv\exchange-rates-2020-may.csv</location>
+		<location>C:\Work\may\jasper-reports\src\test\resources\data\csv\exchange-rates-2020-may.csv</location>
 	</dataFile>
 	<encoding>UTF-8</encoding>
 	<recordDelimiter>&#13;&#10;</recordDelimiter>
@@ -10,6 +10,7 @@
 	<useFirstRowAsHeader>true</useFirstRowAsHeader>
 	<locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">en</locale>
 	<timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">Europe/London</timeZone>
+	<datePattern>dd.MM.yyyy</datePattern>
 	<queryExecuterMode>false</queryExecuterMode>
 	<columnNames>DATE</columnNames>
 	<columnNames>USD</columnNames>

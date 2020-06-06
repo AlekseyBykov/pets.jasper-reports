@@ -3,12 +3,12 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="exchange-rates" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="af3511ed-1730-4fd5-9859-43154e71ec89">
 	<propertyExpression name="net.sf.jasperreports.data.adapter"><![CDATA[$P{DataAdapterLocation}]]></propertyExpression>
 	<parameter name="DataAdapterLocation" class="java.lang.String" evaluationTime="Early">
-		<defaultValueExpression><![CDATA["C:/java-projects/jasper-reports/src/test/resources/data/adapters/adapter.xml"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["C:/Work/may/jasper-reports/src/test/resources/data/adapters/adapter.xml"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
-	<field name="DATE" class="java.lang.String"/>
+	<field name="DATE" class="java.util.Date"/>
 	<field name="USD" class="java.lang.Integer"/>
 	<field name="EUR" class="java.math.BigDecimal"/>
 	<field name="GBP" class="java.math.BigDecimal"/>
@@ -138,10 +138,6 @@
 			<textField evaluationTime="Report">
 				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="a63d7888-4592-4de4-adff-a19e40b2d8f3"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="0" y="4" width="100" height="13" uuid="ce47b901-2350-4253-a367-7fcfc8f696c2"/>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>

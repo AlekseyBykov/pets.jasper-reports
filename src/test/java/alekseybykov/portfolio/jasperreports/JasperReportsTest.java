@@ -15,37 +15,37 @@ import static org.junit.Assert.assertTrue;
 public class JasperReportsTest extends JasperReportsTestBase {
 
 	@Test
-	public void testCreatePdf() throws JRException {
+	public void testCreatePdfFromCsv() throws JRException {
 		String reportName = "exchange-rates-2020-may.pdf";
-		createPdf(reportName);
+		createPdfFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateHtml() throws JRException {
+	public void testCreateHtmlFromCsv() throws JRException {
 		String reportName = "exchange-rates-2020-may.html";
-		createHtml(reportName);
+		createHtmlFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(htmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateDocx() throws JRException {
+	public void testCreateDocxFromCsv() throws JRException {
 		String reportName = "exchange-rates-2020-may.docx";
-		createDocx(reportName);
+		createDocxFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXml() throws JRException {
+	public void testCreateXmlFromCsv() throws JRException {
 		String reportName = "exchange-rates-2020-may.xml";
-		createXml(reportName);
+		createXmlFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXlsx() throws JRException {
+	public void testCreateXlsxFromCsv() throws JRException {
 		String reportName = "exchange-rates-2020-may.xlsx";
-		createXlsx(reportName);
+		createXlsxFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
 	}
 }
