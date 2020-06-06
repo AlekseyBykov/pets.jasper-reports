@@ -21,7 +21,7 @@
     </properties>
 
     <name>jasper-reports</name>
-    <description/>
+    <description>Examples of creating reports in various formats by using Jaspersoft Studio and JasperReports</description>
     <url>https://alekseybykov.github.io</url>
 
     <developers>
