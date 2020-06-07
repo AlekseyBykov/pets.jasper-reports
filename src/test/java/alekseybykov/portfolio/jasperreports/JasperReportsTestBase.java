@@ -25,14 +25,14 @@ import java.text.ParseException;
  */
 public class JasperReportsTestBase {
 
-	private static final String rootReportsPath = System.getProperty("user.dir").concat("/out/");;
-	private static final String csvDataSourcePath = "data/csv/";
-
 	protected static final String pdfReportsPath = System.getProperty("user.dir").concat("/out/reports/pdf/");
 	protected static final String htmlReportsPath = System.getProperty("user.dir").concat("/out/reports/html/");
 	protected static final String docxReportsPath = System.getProperty("user.dir").concat("/out/reports/docx/");
 	protected static final String xmlReportsPath = System.getProperty("user.dir").concat("/out/reports/xml/");
 	protected static final String xlsxReportsPath = System.getProperty("user.dir").concat("/out/reports/xlsx/");
+
+	private static final String rootReportsPath = System.getProperty("user.dir").concat("/out/");;
+	private static final String csvDataSourcePath = "data/csv/";
 
 	private static final String csvDesignFileName = "report-design-for-csv-dataset.jrxml";
 	private static final String beansDesignFileName = "report-design-for-beans-dataset.jrxml";
@@ -57,6 +57,11 @@ public class JasperReportsTestBase {
 	protected void createHtmlFromCsv(String htmlFileName) throws JRException, FileNotFoundException {
 		JRDataSource dataSource = new JRCsvDataSource(CustomPathHelper.getResourceAsStream(csvDataSourcePath.concat(csvDataSourceFileName)));
 		JasperExportManager.exportReportToHtmlFile(JasperPrintBuilder.build(dataSource, csvDesignFileName), htmlReportsPath.concat(htmlFileName));
+	}
+
+	protected void createHtmlFromBeansCollection(String htmlFileName) throws JRException, ParseException, FileNotFoundException {
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(ExchangeRateFixture.getFixture());
+		JasperExportManager.exportReportToHtmlFile(JasperPrintBuilder.build(dataSource, beansDesignFileName), htmlReportsPath.concat(htmlFileName));
 	}
 
 	protected void createDocxFromCsv(String docxFileName) throws JRException, FileNotFoundException {
