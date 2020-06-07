@@ -51,10 +51,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="145" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="1"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="126" width="138" height="20" origin="4" srcId="10" printId="1"/>
 			<font size="14"/>
-			<textContent><![CDATA[28.05.20 3:00]]></textContent>
+			<textContent><![CDATA[28.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="126" width="138" height="20" origin="4" srcId="11" printId="1"/>
@@ -74,10 +74,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="165" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="2"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="146" width="138" height="20" origin="4" srcId="10" printId="2"/>
 			<font size="14"/>
-			<textContent><![CDATA[27.05.20 3:00]]></textContent>
+			<textContent><![CDATA[27.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="146" width="138" height="20" origin="4" srcId="11" printId="2"/>
@@ -97,10 +97,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="185" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="3"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="166" width="138" height="20" origin="4" srcId="10" printId="3"/>
 			<font size="14"/>
-			<textContent><![CDATA[26.05.20 3:00]]></textContent>
+			<textContent><![CDATA[26.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="166" width="138" height="20" origin="4" srcId="11" printId="3"/>
@@ -120,10 +120,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="205" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="4"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="186" width="138" height="20" origin="4" srcId="10" printId="4"/>
 			<font size="14"/>
-			<textContent><![CDATA[25.05.20 3:00]]></textContent>
+			<textContent><![CDATA[25.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="186" width="138" height="20" origin="4" srcId="11" printId="4"/>
@@ -143,10 +143,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="225" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="5"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="206" width="138" height="20" origin="4" srcId="10" printId="5"/>
 			<font size="14"/>
-			<textContent><![CDATA[24.05.20 3:00]]></textContent>
+			<textContent><![CDATA[24.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="206" width="138" height="20" origin="4" srcId="11" printId="5"/>
@@ -166,10 +166,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="245" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="6"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="226" width="138" height="20" origin="4" srcId="10" printId="6"/>
 			<font size="14"/>
-			<textContent><![CDATA[23.05.20 3:00]]></textContent>
+			<textContent><![CDATA[23.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="226" width="138" height="20" origin="4" srcId="11" printId="6"/>
@@ -189,10 +189,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="265" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="7"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="246" width="138" height="20" origin="4" srcId="10" printId="7"/>
 			<font size="14"/>
-			<textContent><![CDATA[22.05.20 3:00]]></textContent>
+			<textContent><![CDATA[22.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="246" width="138" height="20" origin="4" srcId="11" printId="7"/>
@@ -212,10 +212,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="285" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="8"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="266" width="138" height="20" origin="4" srcId="10" printId="8"/>
 			<font size="14"/>
-			<textContent><![CDATA[21.05.20 3:00]]></textContent>
+			<textContent><![CDATA[21.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="266" width="138" height="20" origin="4" srcId="11" printId="8"/>
@@ -235,10 +235,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="305" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="9"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="286" width="138" height="20" origin="4" srcId="10" printId="9"/>
 			<font size="14"/>
-			<textContent><![CDATA[20.05.20 3:00]]></textContent>
+			<textContent><![CDATA[20.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="286" width="138" height="20" origin="4" srcId="11" printId="9"/>
@@ -258,10 +258,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="325" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="10"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="306" width="138" height="20" origin="4" srcId="10" printId="10"/>
 			<font size="14"/>
-			<textContent><![CDATA[19.05.20 3:00]]></textContent>
+			<textContent><![CDATA[19.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="306" width="138" height="20" origin="4" srcId="11" printId="10"/>
@@ -281,10 +281,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="345" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="11"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="326" width="138" height="20" origin="4" srcId="10" printId="11"/>
 			<font size="14"/>
-			<textContent><![CDATA[18.05.20 3:00]]></textContent>
+			<textContent><![CDATA[18.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="326" width="138" height="20" origin="4" srcId="11" printId="11"/>
@@ -304,10 +304,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="365" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="12"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="346" width="138" height="20" origin="4" srcId="10" printId="12"/>
 			<font size="14"/>
-			<textContent><![CDATA[17.05.20 3:00]]></textContent>
+			<textContent><![CDATA[17.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="346" width="138" height="20" origin="4" srcId="11" printId="12"/>
@@ -327,10 +327,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="385" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="13"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="366" width="138" height="20" origin="4" srcId="10" printId="13"/>
 			<font size="14"/>
-			<textContent><![CDATA[16.05.20 3:00]]></textContent>
+			<textContent><![CDATA[16.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="366" width="138" height="20" origin="4" srcId="11" printId="13"/>
@@ -350,10 +350,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="405" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="14"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="386" width="138" height="20" origin="4" srcId="10" printId="14"/>
 			<font size="14"/>
-			<textContent><![CDATA[15.05.20 3:00]]></textContent>
+			<textContent><![CDATA[15.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="386" width="138" height="20" origin="4" srcId="11" printId="14"/>
@@ -373,10 +373,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="425" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="15"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="406" width="138" height="20" origin="4" srcId="10" printId="15"/>
 			<font size="14"/>
-			<textContent><![CDATA[14.05.20 3:00]]></textContent>
+			<textContent><![CDATA[14.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="406" width="138" height="20" origin="4" srcId="11" printId="15"/>
@@ -396,10 +396,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="445" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="16"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="426" width="138" height="20" origin="4" srcId="10" printId="16"/>
 			<font size="14"/>
-			<textContent><![CDATA[13.05.20 3:00]]></textContent>
+			<textContent><![CDATA[13.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="426" width="138" height="20" origin="4" srcId="11" printId="16"/>
@@ -419,10 +419,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="465" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="17"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="446" width="138" height="20" origin="4" srcId="10" printId="17"/>
 			<font size="14"/>
-			<textContent><![CDATA[12.05.20 3:00]]></textContent>
+			<textContent><![CDATA[12.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="446" width="138" height="20" origin="4" srcId="11" printId="17"/>
@@ -442,10 +442,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="485" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="18"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="466" width="138" height="20" origin="4" srcId="10" printId="18"/>
 			<font size="14"/>
-			<textContent><![CDATA[11.05.20 3:00]]></textContent>
+			<textContent><![CDATA[11.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="466" width="138" height="20" origin="4" srcId="11" printId="18"/>
@@ -465,10 +465,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="505" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="19"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="486" width="138" height="20" origin="4" srcId="10" printId="19"/>
 			<font size="14"/>
-			<textContent><![CDATA[10.05.20 3:00]]></textContent>
+			<textContent><![CDATA[10.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="486" width="138" height="20" origin="4" srcId="11" printId="19"/>
@@ -488,10 +488,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="525" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="20"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="506" width="138" height="20" origin="4" srcId="10" printId="20"/>
 			<font size="14"/>
-			<textContent><![CDATA[09.05.20 3:00]]></textContent>
+			<textContent><![CDATA[09.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="506" width="138" height="20" origin="4" srcId="11" printId="20"/>
@@ -511,10 +511,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="545" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="21"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="526" width="138" height="20" origin="4" srcId="10" printId="21"/>
 			<font size="14"/>
-			<textContent><![CDATA[08.05.20 3:00]]></textContent>
+			<textContent><![CDATA[08.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="526" width="138" height="20" origin="4" srcId="11" printId="21"/>
@@ -534,10 +534,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="565" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="22"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="546" width="138" height="20" origin="4" srcId="10" printId="22"/>
 			<font size="14"/>
-			<textContent><![CDATA[07.05.20 3:00]]></textContent>
+			<textContent><![CDATA[07.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="546" width="138" height="20" origin="4" srcId="11" printId="22"/>
@@ -557,10 +557,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="585" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="23"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="566" width="138" height="20" origin="4" srcId="10" printId="23"/>
 			<font size="14"/>
-			<textContent><![CDATA[06.05.20 3:00]]></textContent>
+			<textContent><![CDATA[06.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="566" width="138" height="20" origin="4" srcId="11" printId="23"/>
@@ -580,10 +580,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="605" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="24"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="586" width="138" height="20" origin="4" srcId="10" printId="24"/>
 			<font size="14"/>
-			<textContent><![CDATA[05.05.20 3:00]]></textContent>
+			<textContent><![CDATA[05.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="586" width="138" height="20" origin="4" srcId="11" printId="24"/>
@@ -603,10 +603,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="625" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="25"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="606" width="138" height="20" origin="4" srcId="10" printId="25"/>
 			<font size="14"/>
-			<textContent><![CDATA[04.05.20 3:00]]></textContent>
+			<textContent><![CDATA[04.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="606" width="138" height="20" origin="4" srcId="11" printId="25"/>
@@ -626,10 +626,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="645" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="26"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="626" width="138" height="20" origin="4" srcId="10" printId="26"/>
 			<font size="14"/>
-			<textContent><![CDATA[03.05.20 3:00]]></textContent>
+			<textContent><![CDATA[03.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="626" width="138" height="20" origin="4" srcId="11" printId="26"/>
@@ -649,10 +649,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="665" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="27"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="646" width="138" height="20" origin="4" srcId="10" printId="27"/>
 			<font size="14"/>
-			<textContent><![CDATA[02.05.20 3:00]]></textContent>
+			<textContent><![CDATA[02.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="646" width="138" height="20" origin="4" srcId="11" printId="27"/>
@@ -672,10 +672,10 @@
 		<line>
 			<reportElement uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9" x="20" y="685" width="555" height="1" forecolor="#787878" origin="4" srcId="9" printId="28"/>
 		</line>
-		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yy H:mm">
+		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.util.Date" pattern="dd.MM.yyyy">
 			<reportElement uuid="67d32914-509b-436a-8238-2dc5c1d9cecd" x="20" y="666" width="138" height="20" origin="4" srcId="10" printId="28"/>
 			<font size="14"/>
-			<textContent><![CDATA[01.05.20 3:00]]></textContent>
+			<textContent><![CDATA[01.05.2020]]></textContent>
 		</text>
 		<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719" valueClass="java.lang.Integer">
 			<reportElement uuid="10bfb353-8dac-4f81-a671-af3cba3a6780" x="158" y="666" width="138" height="20" origin="4" srcId="11" printId="28"/>

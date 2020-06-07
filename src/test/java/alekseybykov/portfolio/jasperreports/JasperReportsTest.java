@@ -5,7 +5,8 @@ import net.sf.jasperreports.engine.JRException;
 import org.junit.Test;
 
 import java.io.File;
-
+import java.io.FileNotFoundException;
+import java.text.ParseException;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -15,36 +16,43 @@ import static org.junit.Assert.assertTrue;
 public class JasperReportsTest extends JasperReportsTestBase {
 
 	@Test
-	public void testCreatePdfFromCsv() throws JRException {
-		String reportName = "exchange-rates-2020-may.pdf";
+	public void testCreatePdfFromCsv() throws JRException, FileNotFoundException {
+		String reportName = "report-from-csv-dataset.pdf";
 		createPdfFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateHtmlFromCsv() throws JRException {
-		String reportName = "exchange-rates-2020-may.html";
+	public void testCreatePdfFromBeansCollection() throws ParseException, FileNotFoundException, JRException {
+		String reportName = "report-from-beans-dataset.pdf";
+		createPdfFromBeansCollection(reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(pdfReportsPath.concat(reportName))));
+	}
+
+	@Test
+	public void testCreateHtmlFromCsv() throws JRException, FileNotFoundException {
+		String reportName = "report-from-csv-dataset.html";
 		createHtmlFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(htmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateDocxFromCsv() throws JRException {
-		String reportName = "exchange-rates-2020-may.docx";
+	public void testCreateDocxFromCsv() throws JRException, FileNotFoundException {
+		String reportName = "report-from-csv-dataset.docx";
 		createDocxFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXmlFromCsv() throws JRException {
-		String reportName = "exchange-rates-2020-may.xml";
+	public void testCreateXmlFromCsv() throws JRException, FileNotFoundException {
+		String reportName = "report-from-csv-dataset.xml";
 		createXmlFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xmlReportsPath.concat(reportName))));
 	}
 
 	@Test
-	public void testCreateXlsxFromCsv() throws JRException {
-		String reportName = "exchange-rates-2020-may.xlsx";
+	public void testCreateXlsxFromCsv() throws JRException, FileNotFoundException {
+		String reportName = "report-from-csv-dataset.xlsx";
 		createXlsxFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
 	}

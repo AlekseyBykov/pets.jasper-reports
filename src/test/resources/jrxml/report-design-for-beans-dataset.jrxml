@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.4.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="exchange-rates" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="af3511ed-1730-4fd5-9859-43154e71ec89">
-	<propertyExpression name="net.sf.jasperreports.data.adapter"><![CDATA[$P{DataAdapterLocation}]]></propertyExpression>
-	<parameter name="DataAdapterLocation" class="java.lang.String" evaluationTime="Early">
-		<defaultValueExpression><![CDATA["C:/Work/may/jasper-reports/src/test/resources/data/adapters/adapter.xml"]]></defaultValueExpression>
-	</parameter>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
-	<field name="DATE" class="java.util.Date"/>
-	<field name="USD" class="java.lang.Integer"/>
-	<field name="EUR" class="java.math.BigDecimal"/>
-	<field name="GBP" class="java.math.BigDecimal"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="usd" class="java.lang.Integer"/>
+	<field name="eur" class="java.math.BigDecimal"/>
+	<field name="gbp" class="java.math.BigDecimal"/>
 	<background>
 		<band/>
 	</background>
@@ -87,14 +83,14 @@
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" forecolor="#787878" uuid="8e643226-5ec4-4c4d-891f-b4f2e44d5df9"/>
 			</line>
-			<textField isStretchWithOverflow="true">
+			<textField pattern="dd.MM.yyyy" isBlankWhenNull="true" isStretchWithOverflow="true">
 				<reportElement x="0" y="0" width="138" height="20" uuid="67d32914-509b-436a-8238-2dc5c1d9cecd">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02e3e97b-78db-4f00-b741-c9a1d2f3e265"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="138" y="0" width="138" height="20" uuid="10bfb353-8dac-4f81-a671-af3cba3a6780">
@@ -103,7 +99,7 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{USD}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{usd}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="276" y="0" width="138" height="20" uuid="d47c9502-370e-4a83-9253-663ac073f749">
@@ -112,7 +108,7 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{EUR}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{eur}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="414" y="0" width="138" height="20" uuid="9c4ce587-0962-486e-9a8a-58bb81126caf">
@@ -121,7 +117,7 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{GBP}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{gbp}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
