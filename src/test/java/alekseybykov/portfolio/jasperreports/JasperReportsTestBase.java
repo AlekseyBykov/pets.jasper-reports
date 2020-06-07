@@ -1,10 +1,8 @@
 package alekseybykov.portfolio.jasperreports;
 
-import alekseybykov.portfolio.jasperreports.helpers.CustomDateHelper;
+import alekseybykov.portfolio.jasperreports.fixtures.ExchangeRateFixture;
 import alekseybykov.portfolio.jasperreports.helpers.CustomPathHelper;
 import alekseybykov.portfolio.jasperreports.helpers.JasperPrintBuilder;
-import alekseybykov.portfolio.jasperreports.model.ExchangeRateBean;
-import alekseybykov.portfolio.jasperreports.model.ExchangeRateBeanBuilder;
 import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -19,14 +17,7 @@ import org.junit.BeforeClass;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
 
 /**
  * @author Aleksey Bykov
@@ -59,22 +50,7 @@ public class JasperReportsTestBase {
 	}
 
 	protected void createPdfFromBeansCollection(String pdfFileName) throws JRException, ParseException, FileNotFoundException {
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
-		Date date = simpleDateFormat.parse("01.05.2020");
-		List<ExchangeRateBean> beans = new ArrayList<>();
-		final int recordsNumber = 28;
-		final int baseCurrency = 1;
-		for (int i = 1; i <= recordsNumber; i ++) {
-			beans.add(new ExchangeRateBeanBuilder()
-					.setDate(date)
-					.setUsd(baseCurrency)
-					.setEur(new BigDecimal(BigInteger.valueOf(new Random().nextInt(10000)), 4))
-					.setGbp(new BigDecimal(BigInteger.valueOf(new Random().nextInt(10000)), 4))
-					.build());
-			date = CustomDateHelper.plusDay(date);
-		}
-
-		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(beans);
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(ExchangeRateFixture.getFixture());
 		JasperExportManager.exportReportToPdfFile(JasperPrintBuilder.build(dataSource, beansDesignFileName), pdfReportsPath.concat(pdfFileName));
 	}
 
