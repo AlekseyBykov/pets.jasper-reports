@@ -72,6 +72,14 @@ public class JasperReportsTestBase {
 		jrDocxExporter.exportReport();
 	}
 
+	protected void createDocxFromBeansCollection(String docxFileName) throws JRException, ParseException, FileNotFoundException {
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(ExchangeRateFixture.getFixture());
+		JRDocxExporter jrDocxExporter = new JRDocxExporter();
+		jrDocxExporter.setExporterInput(new SimpleExporterInput(JasperPrintBuilder.build(dataSource, beansDesignFileName)));
+		jrDocxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(new File(docxReportsPath.concat(docxFileName))));
+		jrDocxExporter.exportReport();
+	}
+
 	protected void createXmlFromCsv(String xmlFileName) throws JRException, FileNotFoundException {
 		JRDataSource dataSource = new JRCsvDataSource(CustomPathHelper.getResourceAsStream(csvDataSourcePath.concat(csvDataSourceFileName)));
 		JasperExportManager.exportReportToXmlFile(JasperPrintBuilder.build(dataSource, csvDesignFileName), xmlReportsPath.concat(xmlFileName), false);

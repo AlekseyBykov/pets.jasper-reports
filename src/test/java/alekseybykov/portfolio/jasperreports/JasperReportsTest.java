@@ -51,6 +51,13 @@ public class JasperReportsTest extends JasperReportsTestBase {
 	}
 
 	@Test
+	public void testCreateDocxFromBeansCollection() throws ParseException, FileNotFoundException, JRException {
+		String reportName = "report-from-beans-dataset.docx";
+		createDocxFromBeansCollection(reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(docxReportsPath.concat(reportName))));
+	}
+
+	@Test
 	public void testCreateXmlFromCsv() throws JRException, FileNotFoundException {
 		String reportName = "report-from-csv-dataset.xml";
 		createXmlFromCsv(reportName);
