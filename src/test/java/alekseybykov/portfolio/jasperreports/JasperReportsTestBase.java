@@ -95,4 +95,15 @@ public class JasperReportsTestBase {
 		jrXlsxExporter.setConfiguration(configuration);
 		jrXlsxExporter.exportReport();
 	}
+
+	protected void createXlsxFromBeansCollection(String xlsxFileName) throws JRException, FileNotFoundException, ParseException {
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(ExchangeRateFixture.getFixture());
+		JRXlsxExporter jrXlsxExporter = new JRXlsxExporter();
+		jrXlsxExporter.setExporterInput(new SimpleExporterInput(JasperPrintBuilder.build(dataSource, beansDesignFileName)));
+		jrXlsxExporter.setExporterOutput(new SimpleOutputStreamExporterOutput(xlsxReportsPath.concat(xlsxFileName)));
+		SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
+		configuration.setCollapseRowSpan(false);
+		jrXlsxExporter.setConfiguration(configuration);
+		jrXlsxExporter.exportReport();
+	}
 }

@@ -70,4 +70,11 @@ public class JasperReportsTest extends JasperReportsTestBase {
 		createXlsxFromCsv(reportName);
 		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
 	}
+
+	@Test
+	public void testCreateXlsxFromBeansCollection() throws JRException, FileNotFoundException, ParseException {
+		String reportName = "report-from-beans-dataset.xlsx";
+		createXlsxFromBeansCollection(reportName);
+		assertTrue(CustomPathHelper.isFileExists(new File(xlsxReportsPath.concat(reportName))));
+	}
 }
