@@ -85,6 +85,11 @@ public class JasperReportsTestBase {
 		JasperExportManager.exportReportToXmlFile(JasperPrintBuilder.build(dataSource, csvDesignFileName), xmlReportsPath.concat(xmlFileName), false);
 	}
 
+	protected void createXmlFromBeansCollection(String xmlFileName) throws JRException, FileNotFoundException, ParseException {
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(ExchangeRateFixture.getFixture());
+		JasperExportManager.exportReportToXmlFile(JasperPrintBuilder.build(dataSource, beansDesignFileName), xmlReportsPath.concat(xmlFileName), false);
+	}
+
 	protected void createXlsxFromCsv(String xlsxFileName) throws JRException, FileNotFoundException {
 		JRDataSource dataSource = new JRCsvDataSource(CustomPathHelper.getResourceAsStream(csvDataSourcePath.concat(csvDataSourceFileName)));
 		JRXlsxExporter jrXlsxExporter = new JRXlsxExporter();
