@@ -15,7 +15,7 @@
         <itext.version>2.1.7.js6</itext.version>
         <jfreechart.version>1.0.0</jfreechart.version>
         <jcommon.version>1.0.0</jcommon.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 
